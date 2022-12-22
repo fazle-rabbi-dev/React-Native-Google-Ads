@@ -1,0 +1,13 @@
+# Install the ad module
+expo install react-native-google-mobile-ads
+
+# Install the dev-client module
+expo install expo-dev-client
+
+# Build the dev-client (as an APK)
+eas build --platform android --profile development --local
+
+# Note: Install the built APK into emulator or device.
+
+# Start the expo service for the dev client
+expo start --dev-client --lan
